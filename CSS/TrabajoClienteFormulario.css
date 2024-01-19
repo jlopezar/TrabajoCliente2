@@ -1,0 +1,144 @@
+header{
+    margin-top: 1%;
+}
+
+h1{
+    position: absolute;
+}
+
+body{
+    color: palevioletred;
+    font-family: 'Gruppo', sans-serif;
+    font-weight: bolder;
+}
+
+#diaCita{
+    margin-bottom: 3%;
+    margin-top: -18px;
+}
+
+#formularioParte2{
+    margin-bottom: 5%; 
+}
+
+h4{
+    position: relative;
+    margin-left: 81%;
+    margin-top: 2%;
+}
+
+h3{
+    font-weight: bolder;
+    margin-bottom: 1%;
+}
+
+section{
+    margin-top: 1%;
+    text-align: center;
+}
+
+.row{
+    margin-bottom: 1%;
+    text-align: center;
+}
+
+#nombre, #dni, #nacimiento{
+    position: absolute;
+    left: 27%;
+}
+
+#nombreLabel, #dniLabel, #nacimientoLabel{
+    position: relative;
+    left: -18%;
+}
+
+#apellidos, #telefono, #observaciones{
+    position: absolute;
+    right: 20%;
+}
+
+#apellidosLabel, #telefonoLabel, #observacionesLabel{
+    position: relative;
+    left: -25%;
+}
+
+#boton{
+    margin-top: 4%;
+}
+
+.botones{
+    color: black;
+    background-color: palevioletred;
+    border: none;
+    font-size:120%;
+    margin: 1%;
+    padding: 10px;
+    position: relative;
+    top: 25px;
+    border-radius: 4px;
+}
+
+.botones:hover{
+    font-weight: bolder;
+    color:aliceblue;
+}
+
+#botonGuardar{
+    position: relative;
+    background-color: black;
+    color: aliceblue;
+    left: 12px;
+    bottom: 110px;
+}
+
+#botonGuardar:hover {
+    font-weight: bolder;
+}
+
+#info{
+    position: relative;
+    bottom: 110px;
+    font-size: 25px;
+    color: black;
+    opacity: 1;
+    transition: opacity 5s ease;
+}
+
+#info.final{
+    opacity: 0;
+}
+
+#botonM, #botonE {
+    color: black;
+    margin: 5px;
+    border-style: hidden;
+}
+
+#botonM:hover{
+    font-weight: bolder;
+    color: palevioletred;
+}
+
+#botonE:hover{
+    font-weight: bolder;
+    color: palevioletred;
+}
+
+
+footer{
+    margin-top: 4%;
+    font-weight: bolder;
+}
+
+#pieNombre{
+    position: absolute;
+}
+
+#pieEmail{
+    position: absolute;
+    
+}
+
+#pieTelefono{
+    right: 0;
+}

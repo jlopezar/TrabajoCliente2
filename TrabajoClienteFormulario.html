@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo de Entorno Cliente. Formulario</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Brygada+1918:wght@500&family=Gruppo&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/CSS/TrabajoClienteFormulario.css">
+
+</head>
+<body onload="cargarDatos()">
+
+    <header class="container">
+        <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <h1>MedacDent</h1>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <h4>Nueva cita</h4>
+            </div>
+        </div> 
+    </header>
+
+    <section class="container">
+        <div class="row">
+                <form onsubmit="return crearTabla()">
+                    <fieldset id="diaCita">
+                        <legend><h3>Día de la cita</h3></legend>
+                        <input type="date" name="" id="dia" onchange="validarFecha()" required>
+                    </fieldset>
+                    
+                    <fieldset id="formularioParte2">
+                        <legend><h3>Información del paciente</h3></legend>
+                        
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <label for="nombre" id="nombreLabel">Nombre</label>
+                                <input type="text" name="nombre" id="nombre" pattern="[A-Za-z]+" maxlength="15" required>
+                            </div>
+
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <label for="apellidos" id="apellidosLabel">Apellidos</label>
+                                <input type="text" name="apellidos" id="apellidos" pattern="[A-Za-z ]+" maxlength="30" required>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <label for="dni" id="dniLabel">DNI</label>
+                                <input type="text" name="dni" id="dni" pattern="[0-9]{8}[A-Z]{1}" maxlength="9" minlength="9" required>
+                            </div>
+
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <label for="telefono" id="telefonoLabel">Telefono</label>
+                                <input type="text" name="telefono" id="telefono" pattern="[6]{1}[0-9]{8}" maxlength="9" minlength="9" required>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <label for="nacimiento" id="nacimientoLabel">Fecha de nacimiento</label>
+                                <input type="date" name="nacimiento" id="nacimiento" required>
+                            </div>
+
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <label for="observaciones" id="observacionesLabel">Observaciones</label>
+                                <input type="textarea" name="observaciones" id="observaciones" maxlength="30">
+                            </div>
+                        </div>    
+                        
+                        <div class="row">
+                            <div id="boton">
+                                <input class="botones" type="submit" value="Pedir cita"> 
+                                <input class="botones" type="reset" value="Borrar los datos" onclick="limpiarBotonG()">
+                                <input class="botones" type="button" value="Atrás" onclick="inicio()">
+                                <div id="botonG"></div>
+                                <div id="info"></div>
+                            </div>
+                        <div>
+
+                    </fieldset>
+
+                    <br>
+
+                    <div class="row">
+                        <table class="table table-responsive" id="tabla"></table>
+                    </div>
+
+                </form>
+        </div>
+        
+    </section>
+
+
+    <footer class="container">
+        <div class="row">
+            <div class="col-xs-5 col-sm-6 col-md-7 col-lg-8">
+                <p id="pieNombre">MedacDent</p>
+            </div>
+            
+            <div class="col-xs-4 col-sm-3 col-md-3 col-lg-2">
+                <p id="pieEmail">Email: medacdent@gmail.com</p>
+            </div>
+
+            <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2">
+               <p id="pieTelefono">Teléfono: 640319934</p> 
+            </div>
+        </div>   
+    </footer>
+
+    <script src="/JS/TrabajoCliente.js"></script>
+    
+</body>
+</html>

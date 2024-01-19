@@ -1,0 +1,48 @@
+/* 1. Página de inicio */
+body{
+    background-color:palevioletred;
+    font-family: 'Gruppo', sans-serif;
+}
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+    color: aliceblue;
+    
+}
+
+#nueva{
+    position: absolute;
+    top: 300px;
+    left: 650px;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    font-size: 40px;
+   
+}
+
+#nueva:hover{
+    color: aliceblue;
+}
+
+footer{
+    position: relative;
+    color: aliceblue;
+    font-weight:bolder;
+    font-size: 20px;
+    margin-top: 40%;
+}
+
+#pieEmail, #pieTelefono{
+    position: absolute;
+    
+}
+
+#pieEmail{
+    right: 15%;
+}
+
+#pieTelefono{
+    right: 0;
+}
